@@ -1,0 +1,377 @@
+/* setting background doodle image */
+body{
+    box-sizing: border-box;
+    background-image:url("images/AdobeStock_412214227.jpeg") ;
+    background-size: cover;
+    background-position: center;
+  }
+  *{
+  margin:0;
+  }
+  /* Header part */
+  .item1 { grid-area: header;
+  min-height: 15vh;
+  }
+
+  /* navigation bar */
+  .item2 { grid-area: nav;
+    min-height: 4vh ;
+    margin-bottom: 2%;
+    font-family: Gill Sans MT;
+    }
+
+  /* main content area: */
+  .item3 { 
+    grid-area: main;
+  min-height: 50vh; 
+  border-radius: 25px;
+  border: solid #333;
+  color:#0e0000;
+  font-family:Gill Sans MT;
+  }
+
+  /*
+  #backgroundnoise{;
+
+  }*/
+
+ /* .player {
+    width: 50%;
+    height: 20% ;
+  }*/
+
+
+  /* Spotify API section */
+  .item4 { 
+    grid-area: sidebar;
+    min-width: 20vh;
+    padding: 0px;
+  }
+
+  /* todoList section */
+  .item5 { 
+      grid-area: rightsidebar;  ;
+    min-width: 20vh  ;
+  }
+  
+  /*footer section 
+  .item6 { 
+      grid-area: footer;
+  min-height: 10vh;
+  background-color: #cd6c40e0;
+  width: auto;
+  border-radius: 25px;
+  border: solid #333;
+  margin: 5px;
+
+  }
+  */ 
+
+  /* navigation links */
+  .item2 a{
+    height: 4vh;
+    margin: 0% 2%;
+  }
+
+  /* creating the grid for different sections */
+  .grid-container {
+    display: grid;
+    min-height: 100vh;
+   grid-gap :2px;
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'sidebar main main rightsidebar'
+    'sidebar main main rightsidebar'
+   'footer footer footer footer';
+    margin:auto;
+    padding: 5px;
+  }
+  
+  /* setting common features for all divs under all sections */
+  .grid-container > div {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  /* setting proper nav bar */
+  .item2 {
+    padding:0;
+    overflow:hidden;  
+    }
+
+/* navigation bar decoration */
+    #nav{
+      background-color: #cd6c40e0; 
+      overflow:hidden;  
+      min-height: 5vh;
+      margin: 0 15% ;
+      border-radius: 15px 15px 15px 15px;
+      border:solid black
+    }
+/* navigation bar link decoration */
+    .item2 a{
+    padding:1px 2% 1px 2%;
+    float:left;
+    display:block;
+    text-align:center;
+  min-width: 12vh;
+  color: black;
+  font-family: Gill Sans MT;
+  min-height: 5vh; 
+  font-size: 25px;
+    }
+
+    /* hover decor */
+    a:hover {
+    background-color:rgba(255, 255, 255, 0.966)
+    }
+  
+    /* the about us pop up section  */
+  #show{
+      position: absolute;
+     right: 20%;
+     left: 20%;;
+    min-width:500px;
+    min-height: 500px;
+      margin:auto;
+      display: none;
+      background-color:rgba(255, 214, 30, 0.966);
+      border:solid bisque;
+      border-radius: 10%;
+  }
+  /* the question mark icon on the right top  */
+  #about {
+      position:absolute;
+      right:10px;
+      top: 10px; 
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+      background-image:url(images/aboutus.png) ;
+      border: 2px solid rgb(226, 206, 21);
+       border-radius: 50%;
+  }
+   
+  /* the logo at the left */
+
+
+/* the heading for the name  */
+  h1{
+    padding:auto;
+    margin: auto;
+  }
+
+/* the spotify api inside sidebar 
+  .spotifyApi {
+    background-color:rgba(240, 233, 233, 0.5) ;
+   height:70% ;
+   margin: 2%;
+   border: solid #333;
+   border-radius: 25px;
+   font-family: Gill Sans MT;
+  
+  }
+  */ 
+
+  /* the todoList inside sidebar */
+  .todoList{
+    background-color:#cd6c40e0 ;
+   height:70% ;
+   margin: 2%;
+  border: solid #333;
+  border-radius: 25px;
+  font-family: Gill Sans MT;
+  
+  }
+
+  /* design the name for the website  */
+  #name{
+    text-align:center;
+    color:rgb(0, 0, 0);
+     font-size:75px;
+    animation: mymove 5s infinite;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+
+  /* animating the website name */
+  @keyframes mymove {
+    50% {text-shadow: 10px 20px 30px rgb(0, 0, 0);}
+  }
+
+/*Background audio section*/
+
+.music-container{
+display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 450px;
+  margin: auto;
+  padding: 10px;
+}
+
+.music{
+  /*width:150px;
+  background: rgba(160, 99, 58, 0.5);
+  margin: 4%;*/
+  width: 150px;
+  height: auto;
+  border: 1px black solid;
+  background-color: #cd6c40e0;
+  margin: 5px;
+}
+
+
+.music .box{
+  position: relative;
+  font-size: large;
+  width: auto;
+  height: 100px;
+} 
+
+
+.music .box img{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100% ;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music audio {
+  width: 100%;
+  outline: none;
+  object-fit: cover;
+}
+
+.musicText{
+  position:relative;
+  width:100px; 
+ float: left;
+ margin: 4%;
+}
+
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: #dfb08b;
+  color: #b87c6a;
+}
+
+.audioimage{
+  opacity: 0.6;
+}
+  
+/*Spacebtwn divs in main section*/
+
+
+
+/*Pomodoro Timer*/
+.timercontainer {
+  background-color: #000000cc;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 1.5px black solid;
+  margin-bottom: 25px;
+}
+
+#timer {
+  color: aliceblue;
+}
+
+.btn_default {
+  color: black;
+}
+
+
+
+/*To-do list CSS*/
+body {
+  box-sizing:content-box;
+}
+
+.container {
+  margin-top: 2%;
+  background: lightgray;
+  width: 350px;
+  height: 450px;
+  margin: auto;
+  border-radius: 10px;
+  border: solid 2px;
+}
+
+
+header {
+  
+  background: black;
+  color:#cd6c40 ;
+  padding:0.5rem;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+section {
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+input[type=text] {
+  height: 2rem;
+  width:100%;
+  margin-bottom: 0.5rem;
+}
+input[type=checkbox] {
+  margin-right: 0.5rem;
+}
+
+button {
+  height: 2rem;
+  border-radius: 2px;
+  background-color: #cd6c40e0;
+  margin-right: 1rem;
+  color: aliceblue;
+}
+
+.btn-big {
+  width:30%;
+}
+
+.btn-small {
+  width:25%;
+}
+
+.list-container {
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  background: whitesmoke;
+  margin:0.5rem 0;
+  padding: 5px ;
+  display: flex;  
+  align-items: flex-end;
+}
+
+.delete-button {
+  height: 1.5rem;
+  margin-left:auto;
+  background:black;
+  color: white;
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgba(204, 33, 33, 0.986);
+}
+h1{
+  padding:0;
+  
+  margin: 0;
+}
+
