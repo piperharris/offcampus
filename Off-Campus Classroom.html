@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Off Campus Classroom</title>
+<link rel="stylesheet" href="Classroom.css">
+
+<script>
+    function myFunction() {
+    var x= document.getElementById("show");
+      if (x.style.display === "none"){
+        x.style.display ="block";
+    } 
+    else{
+        x.style.display = "none"
+    }
+}
+
+</script>
+<script type = "text/javascript" src = "Classroom.js"></script>
+</head>
+
+<body>
+
+<h1 style="text-align:center;color:rgb(128, 115, 0); font-size:155px;">  </h1>
+
+<div class="grid-container">
+  <div class="item1">
+    <div id=head>
+  <h1 id="name"> Off-Campus Classroom </h1>
+
+      <div id="logo"></div>
+  </div>
+  <button id="about" onclick="myFunction()"></button>
+  <div id="show"> This is about us </div>
+</div>
+
+<div class="item2">
+<div id="nav">
+  <a href="BITS.html">Home</a>
+  <a href="Cafe.html">Cafeteria</a>
+  <a href="Courtyard.html">Courtyard</a>
+  <a href="Classroom.html">Classroom</a>
+  <a href="#">Chatroom</a>
+  </div>
+  </div>
+
+  <!---- Main Section-->
+  <div class="item3">
+    <div class = spacebtwndivs></div>
+    <div class="music-container">
+    
+
+      <div class="music">
+        <div class="box">
+          <p>Students</p>
+          <img src="images/students talking.jpg" class = audioimage alt="">
+        </div>
+        <audio class = player controls loop>
+          <source src= "./Audio/Students Talking.mp3"   type="audio/mpeg">
+          <source src= "./Audio/Students Talking.mp3"   type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="music">
+        <div class="box">
+          <p>Rain</p>
+          <img src="images/rain.jpg" class = audioimage alt="">
+        </div>
+        <audio class = player controls loop>
+        <source src= "./Audio/Rain - zapsplat.mp3"   type="audio/mpeg">
+        <source src= "./Audio/Rain - zapsplat.mp3"   type="audio/ogg">
+      Your browser does not support the audio element.
+      </audio>
+      </div>
+
+      <div class="music">
+        <div class="box">
+          <p>Mouse</p>
+          <img src="images/computer mouse.jpg" class = audioimage alt="">
+        </div>
+          <audio class = player controls loop>
+            <source src= "./Audio/MouseClick.mp3"   type="audio/mpeg">
+            <source src= "./Audio/MouseClick.ogg"   type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio> 
+      </div>  
+
+    </div>
+
+
+    <div class="music-container">
+      <div class="music" style = "float: left">
+        <div class="box">
+          <p>Pencil</p>
+          <img src="images/pencil writing.jpg" class = audioimage alt="">
+        </div>
+        <audio class = player controls loop>
+        <source src= "./Audio/OBJWrite_Pencil (ID 0221)_BSB.wav"   type="audio/wav">
+        <source src= "./Audio/OBJWrite_Pencil (ID 0221)_BSB.wav"   type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio> 
+      </div>
+      
+
+      <div class="music" style = "float:left">
+          <div class="box">
+            <p>Marker</p>
+            <img src="images/marke.jpg" class= audioimage alt="">
+          </div>
+          <audio class = player controls loop>
+            <source src= "./Audio/Writing-slow-with-marker.mp3"   type="audio/mpeg">
+            <source src= "./Audio/Writing-slow-with-marker.mp3"   type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </div>
+                            
+        <div class="music" style = "float: left">
+          <div class="box">
+            <p>Blackboard</p>
+            <img src="images/chalk.jpg" class= audioimage alt="">
+          </div>
+              <audio class = player controls loop>
+              <source src= "./Audio/writing on blackboard.wav"   type="audio/wav">
+              <source src= "./Audio/writing on blackboard.wav"   type="audio/ogg">
+            Your browser does not support the audio element.
+            </audio>
+          </div>
+      </div>
+      
+    <!--Pomodoro Timer Section-->
+    <!--COPY AND PASTE THIS SECTION-->
+    <div class = "timercontainer">
+      
+      <p>
+        <button id = "btn_pomodoro" class = "btn_default">Pomodoro</button>
+        <button id = "btn_shortbreak" class = "btn_default">Short Break</button>
+        <button id = "btn_longbreak" class = "btn_default">Long Break</button>
+      </p>
+      <p>
+        <div><span id = "timer"></div>
+        <button id = "btn_start" class = "btn_default">Start</button>
+        <button id = "btn_pause" class = "btn_default">Pause</button>
+        <button id = "btn_reset" class = "btn_default">Reset</button>
+      </p>
+    </div> 
+<!--END POMODORO TIMER SECTION-->
+
+
+  </div>
+
+
+
+<div class="item4">
+<h2>&nbsp; </h2>
+<div><iframe src="https://open.spotify.com/embed/playlist/3LFIBdP7eZXJKqf3guepZ1" width="350" height="450" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+   </div>
+
+
+
+   <div class="item5"> 
+    <main class="container">
+
+      <header>
+       <h3>TO-DO LIST</h3>
+       <link rel="stylesheet" href="layout.css">
+       
+      </header>
+    
+      <section>
+       <p>Enter your task here:</p> 
+       <input type="text">
+       <button class="btn-big js-btn-add">Add task</button>
+       <button class="btn-small js-btn-clear">Clear list</button>
+       <button class="btn-small  js-btn-save">Save list</button>
+      </section>
+    
+      <section class="list-container">
+      
+      </section>
+      <script type="text/javascript" src="Classroom.js"></script>
+    </main>
+  
+  
+   
+  
+    </div>
+     </div>
+
+
+<div class="item6"></div>
+</div>
+
+</body>
+</html>
