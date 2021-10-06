@@ -1,0 +1,326 @@
+/* setting background doodle image */
+body{
+  box-sizing: border-box;
+  background-image:url("images/logo.png") ;
+  background-size: cover;
+}
+
+*{
+  margin:0;
+}
+
+/* Header part */
+.item1 { 
+  grid-area: header;
+  min-height: 25vh;
+}
+
+/* navigation bar */
+.item2 {
+  grid-area: nav;
+  min-height: 10vh ;
+  margin-bottom: 5px;
+}
+
+/* main content area: */
+.item3 { 
+  /* margin-top: 5px; */
+  /* padding-top: 2px; */
+  /* width: 100%; */
+  grid-area: main;
+  min-height: 90vh; 
+  border-radius: 10px;
+  background:whitesmoke;
+  border-bottom: 2px solid black;
+}
+
+.chatrooms{
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-style:bold;
+  margin: 0 auto;
+  width: 470px;
+  height:90px;
+  margin-top: 20px; 
+  box-shadow: 0px 0px 2px 2px gray; 
+  background-color:rgba(156, 5, 5, 0.808);
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+/* Spotify API section */
+.item4 { 
+  grid-area: sidebar;
+  min-width: 20vh  ; 
+  background:whitesmoke;
+  border-radius: 20px;
+}
+
+.item4 h3{
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* todoList section */
+.item5 { 
+  grid-area: rightsidebar;  ;
+  min-width: 20vh  ;
+  background:whitesmoke;
+  border-radius: 20px;
+}
+
+body {
+  box-sizing:content-box;
+}
+
+.container {
+  margin-top: 2%;
+  background: whitesmoke;
+  max-width: 55vh;
+  min-height: 80vh;
+  margin: auto;
+  border-radius: 10px;
+  border: solid 2px;
+}
+
+
+header {
+  background: black;
+  color: white;
+  padding:0.5rem;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+section {
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+input[type=text] {
+  height: 2rem;
+  width:100%;
+  margin-bottom: 0.5rem;
+}
+
+input[type=checkbox] {
+  margin-right: 0.5rem;
+}
+
+.item5 button {
+  height: 2rem;
+  border-radius: 2px;
+  background:  black;
+  margin-right: 15px;
+  color: white;
+}
+
+.btn-big {
+  width:30%;
+}
+
+.btn-small {
+  width:25%;
+}
+
+.list-container {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  background: whitesmoke;
+  margin:5px;
+  padding: 5px ;
+  display: flex;  
+  align-items: flex-end;
+}
+
+.delete-button {
+  height: 1.5rem;
+  width: 2rem;
+  margin-left:auto;
+  background:black;
+  color: white;
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgba(204, 33, 33, 0.986);
+}
+h1{
+  padding:5px;
+  margin: 0;
+}
+
+
+/*footer section */
+.item6 {
+  grid-area: footer;
+  min-height: 20vh;
+  background-color: black;
+  width: 100%;
+}
+
+
+/* navigation bar link decoration */
+.item2 a{
+  padding:1px 2% 1px 2%;
+  float:left;
+  display:block;
+  text-align:center;
+min-width: 8vh;
+color: black;
+font-family: Gill Sans MT;
+min-height: 5vh; 
+font-size: 25px;
+  }
+
+/* creating the grif for different sections */
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-gap :2px;
+  grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'sidebar main main rightsidebar'
+    'sidebar main main rightsidebar'
+    'footer footer footer footer';
+ 
+  margin:auto;
+  padding: 5px;
+}
+  
+/* setting common features for all divs under all sections */
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* setting proper nav bar */
+.item2 {
+  padding:0;
+  overflow:hidden;  
+}
+
+/* navigation bar decoration */
+#nav{
+  background-color: rgba(3, 3, 0, 0.966); 
+  overflow:hidden;  
+  min-height: 5vh;
+  margin: 0 30% ;
+  border-radius: 15px 15px 15px 15px;
+}
+
+/* navigation bar link decoration */
+.item2 a{
+  padding:1px 2% 1px 2%;
+  float:left;
+  display:block;
+  text-align:center;
+  min-width: 12vh;
+  color: white;
+  font-family: Gill Sans MT;
+  font-size: 25px;
+}
+
+
+/* hover decor */
+a:hover {
+  background-color:rgba(51, 48, 32, 0.966)
+}
+  
+/* the about us pop up section  */
+#show{
+  position: absolute;
+  right: 20%;
+  left: 20%;;
+  min-width:500px;
+  min-height: 500px;
+  margin:auto;
+  display: none;
+  background-color:rgba(255, 214, 30, 0.966);
+  border:solid bisque;
+  border-radius: 10%;
+}
+
+/* the question mark icon on the right top  */
+#about {
+  position:absolute;
+  right:10px;
+  top: 10px; 
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background-image:url(images/aboutus.png) ;
+  border: 2px solid rgb(226, 206, 21);
+  border-radius: 80%;
+  cursor: pointer;
+}
+
+#about:hover {
+	animation: shake .5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* the heading for the name  */
+h1{
+  padding:auto;
+  padding-left: 150px;
+  margin: auto;
+}
+
+/* the spotify api inside sidebar */
+.spotifyApi {
+  background-color:rgba(240, 233, 233, 0.5) ;
+  height:70% ;
+  /* margin: 2%; */
+  border: solid #333;
+}
+
+/* the todoList inside sidebar */
+.todoList{
+  background-color:rgba(245, 238, 225, 0.5) ;
+  height:70% ;
+  /* margin: 2%; */
+  border: solid #333;
+}
+
+/* design the name for the website  */
+#name{
+  text-align:center;
+  color:rgb(0, 0, 0);
+  font-size:155px;
+  animation: mymove 5s infinite;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+/* animating the website name */
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px rgb(0, 0, 0);}
+}
