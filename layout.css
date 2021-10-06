@@ -1,0 +1,304 @@
+/* setting background doodle image */
+body{
+    box-sizing: border-box;
+    background-image:url("images/logo.png") ;
+    background-size: cover;
+  }
+  *{
+  margin:0;
+  }
+  /* Header part */
+  .item1 { grid-area: header;
+  min-height: 25vh ;
+  }
+  /* navigation bar */
+  .item2 { grid-area: nav;
+    min-height: 4vh ;
+    margin-bottom: 2%;
+    }
+
+  /* main content area: */
+  .item3 { grid-area: main;
+  min-height: 60vh; 
+  background: rgb#000000;
+	 
+  }
+
+  /* todoList section */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 100px) {
+  .container {
+    width: 100%;
+  }
+}
+  .item5 { 
+      grid-area: rightsidebar;  ;
+    min-width: 20vh  ;
+  background-color: 
+  }
+  
+
+  /* navigation links */
+  .item2 a{
+    height: 4vh;
+    margin: 0% 2%;
+  }
+
+  /* creating the grif for different sections */
+  .grid-container {
+    display: grid;
+    min-height: 100vh;
+   grid-gap :2px;
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'sidebar main main rightsidebar'
+    'sidebar main main rightsidebar'
+   'footer footer footer footer';
+ 
+  margin:auto;
+
+    padding: 5px;
+  }
+  
+  /* setting common features for all divs under all sections */
+  .grid-container > div {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  /* setting proper nav bar */
+  .item2 {
+    padding:0;
+    overflow:hidden;  
+    }
+
+/* navigation bar decoration */
+    #nav{
+      background-color: rgba(0,0,0,1.00); 
+      overflow:hidden;  
+      min-height: 5vh;
+      margin: 0 25% ;
+      border-radius: 15px 15px 15px 15px;
+    }
+/* navigation bar link decoration */
+    .item2 a{
+    padding:1px 2% 1px 2%;
+    float:left;
+    display:block;
+    text-align:center;
+  min-width: 12vh;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 5vh; 
+    }
+
+    /* hover decor */
+    a:hover {
+    background-color:yellow
+    }
+  
+    /* the about us pop up section  */
+  #show{
+      position: absolute;
+     right: 20%;
+     left: 20%;;
+    min-width:500px;
+    min-height: 500px;
+      margin:auto;
+      display: none;
+      background-color:lightyellow;
+      border:solid #000000;
+      border-radius: 5%;
+  }
+  /* the question mark icon on the right top  */
+  #about {
+      position:absolute;
+      right:10px;
+      top: 10px;
+	  height: 110px;
+	  width: 100px;
+      display:inline-block;
+      background-image:url("images/aboutus.png") ;
+	  background-size:100px 100px;
+      border: 2px solid black ;
+       border-radius: 80%;
+  }
+   
+ 
+.item6 { 
+      grid-area: footer;
+  min-height: 10vh;
+  background-color: rgb(255, 255, 255, 0.7);
+  width: auto;
+  border-radius: 25px;
+  border: solid #333;
+  margin: 5px;
+
+  }
+
+/* the heading for the name  */
+  h1{
+    padding:auto;
+    padding-left: 150px;
+    margin: auto;
+  }
+
+/* the spotify api inside sidebar */
+  .spotifyApi {
+    background-color:rgba(240, 233, 233, 0.5) ;
+   height:70% ;
+   margin: 2%;
+   border: solid #333;
+  
+  }
+  /* the todoList inside sidebar */
+  .todoList{
+    background-color:rgba(245, 238, 225, 0.5) ;
+   height:70% ;
+   margin: 2%;
+  border: solid #333;
+  
+  }
+
+  /* design the name for the website  */
+  #name{
+    text-align:center;
+    color:rgb(0, 0, 0);
+     font-size:200px;
+    animation: mymove 6s infinite;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+
+  /* animating the website name */
+  @keyframes mymove {
+    50% {text-shadow: 10px 20px 30px rgb(0, 0, 0);}
+  }
+
+img:hover {
+  animation: shake .5s;
+  animation-iteration-count:1 ;
+}
+
+#about:hover {
+	animation: shake .5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+body {
+  box-sizing:content-box;
+}
+
+.container {
+  margin-top: 2%;
+  background: white;
+  max-width: 420px;
+  min-height: 80vh;
+  margin: auto;
+  border-radius: 10px;
+  border: solid 2px;
+}
+
+
+header {
+  
+  background: black;
+  color: yellow;
+  padding:0.5rem;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+section {
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+input[type=text] {
+  height: 2rem;
+  width:100%;
+  margin-bottom: 0.5rem;
+}
+input[type=checkbox] {
+  margin-right: 0.5rem;
+}
+
+button {
+  height: 2rem;
+  border-radius: 2px;
+  background:  black;
+  margin-right: 1rem;
+  color: yellow;
+}
+
+.btn-big {
+  width:30%;
+}
+
+.btn-small {
+  width:25%;
+}
+
+.list-container {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  background: whitesmoke;
+  margin:0.5rem 0;
+  padding: 5px ;
+  display: flex;  
+  align-items: flex-end;
+}
+
+.delete-button {
+  height: 1.5rem;
+  margin-left:auto;
+  background:black;
+  color: white;
+}
+
+.done {
+  text-decoration: line-through;
+  color: rgba(204, 33, 33, 0.986);
+}
+h1{
+  padding:0;
+  
+  margin: 0;
+}
+  
