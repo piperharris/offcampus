@@ -338,7 +338,7 @@ audio::-webkit-media-controls-panel {
 
 /*Pomodoro Timer*/
 .timercontainer {
-  background-color: #000000cc;
+  background-color: white;
   border-radius: 25px;
   margin-left: 25%;
   margin-right: 25%;
@@ -353,7 +353,7 @@ audio::-webkit-media-controls-panel {
 }
 
 #timer {
-  color: aliceblue;
+  color: green;
   margin-left: 25%;
 
 }
