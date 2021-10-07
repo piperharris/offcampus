@@ -21,7 +21,6 @@ body{
   .item3 { grid-area: main;
   min-height: 60vh;
   background: rgb#000000;
-  text-shadow: white;
 
   }
 
