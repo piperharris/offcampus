@@ -15,6 +15,7 @@ body{
   .item2 { grid-area: nav;
     min-height: 4vh ;
     margin-bottom: 2%;
+    width: 20%;
     }
 
   /* main content area: */
