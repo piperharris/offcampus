@@ -19,9 +19,10 @@ body{
 
   /* main content area: */
   .item3 { grid-area: main;
-  min-height: 60vh; 
+  min-height: 60vh;
   background: rgb#000000;
-	 
+  text-shadow: white;
+
   }
 
   /* todoList section */
@@ -47,12 +48,12 @@ body{
     width: 100%;
   }
 }
-  .item5 { 
+  .item5 {
       grid-area: rightsidebar;  ;
     min-width: 20vh  ;
-  background-color: 
+  background-color:
   }
-  
+
 
   /* navigation links */
   .item2 a{
@@ -71,12 +72,12 @@ body{
     'sidebar main main rightsidebar'
     'sidebar main main rightsidebar'
    'footer footer footer footer';
- 
+
   margin:auto;
 
     padding: 5px;
   }
-  
+
   /* setting common features for all divs under all sections */
   .grid-container > div {
     text-align: center;
@@ -86,13 +87,13 @@ body{
   /* setting proper nav bar */
   .item2 {
     padding:0;
-    overflow:hidden;  
+    overflow:hidden;
     }
 
 /* navigation bar decoration */
     #nav{
-      background-color: rgba(0,0,0,1.00); 
-      overflow:hidden;  
+      background-color: rgba(0,0,0,1.00);
+      overflow:hidden;
       min-height: 5vh;
       margin: 0 25% ;
       border-radius: 15px 15px 15px 15px;
@@ -106,14 +107,14 @@ body{
   min-width: 12vh;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
-  min-height: 5vh; 
+  min-height: 5vh;
     }
 
     /* hover decor */
     a:hover {
     background-color:yellow
     }
-  
+
     /* the about us pop up section  */
   #show{
       position: absolute;
@@ -140,9 +141,9 @@ body{
       border: 2px solid black ;
        border-radius: 80%;
   }
-   
- 
-.item6 { 
+
+
+.item6 {
       grid-area: footer;
   min-height: 10vh;
   background-color: rgb(255, 255, 255, 0.7);
@@ -166,7 +167,7 @@ body{
    height:70% ;
    margin: 2%;
    border: solid #333;
-  
+
   }
   /* the todoList inside sidebar */
   .todoList{
@@ -174,7 +175,7 @@ body{
    height:70% ;
    margin: 2%;
   border: solid #333;
-  
+
   }
 
   /* design the name for the website  */
@@ -231,7 +232,7 @@ body {
 
 
 header {
-  
+
   background: black;
   color: yellow;
   padding:0.5rem;
@@ -281,7 +282,7 @@ button {
   background: whitesmoke;
   margin:0.5rem 0;
   padding: 5px ;
-  display: flex;  
+  display: flex;
   align-items: flex-end;
 }
 
@@ -298,7 +299,6 @@ button {
 }
 h1{
   padding:0;
-  
+
   margin: 0;
 }
-  
