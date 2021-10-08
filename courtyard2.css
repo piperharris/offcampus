@@ -345,6 +345,7 @@ audio::-webkit-media-controls-panel {
   border: 1.5px black solid;
   margin-bottom: 25px;
   max-width: auto;
+  align-content: center;
 
   max-height: auto;
   padding: 2% 0 2% 15%;
