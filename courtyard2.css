@@ -344,9 +344,9 @@ audio::-webkit-media-controls-panel {
   margin-top: 2%;
   border: 1.5px black solid;
   margin-bottom: 25px;
-  max-width: 50vh;
+  max-width: auto;
 
-  max-height: 40vh;
+  max-height: auto;
   padding: 2% 0 2% 15%;
 
 }
