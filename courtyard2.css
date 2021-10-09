@@ -14,12 +14,47 @@ margin:0;
 min-height: 30vh ;
 
 background-size: cover;
-
 }
-.item2 { grid-area: nav;
-  min-height: 4vh ;
-  margin: 1% 0%;
+
+.item2 {
+  grid-area: nav;
+  width: 800%;
+  background-color: #555;
+  overflow: auto;
+  align: center;
+}
+
+/* Navigation links */
+.item2 a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.item2 a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.item2 a.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .item2 a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
   }
+}
+
 
 .item3 { grid-area: main;
 min-height: 50vh;
