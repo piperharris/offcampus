@@ -16,7 +16,7 @@ min-height: 30vh ;
 background-size: cover;
 }
 
-.item2 {
+.navbar {
   grid-area: nav;
   width: 800%;
   background-color: #555;
@@ -25,7 +25,7 @@ background-size: cover;
 }
 
 /* Navigation links */
-.item2 a {
+.navbar a {
   float: left;
   padding: 12px;
   color: white;
@@ -36,21 +36,21 @@ background-size: cover;
 }
 
 /* Add a background color on mouse-over */
-.item2 a:hover {
+.navbar a:hover {
   background-color: #000;
 }
 
 /* Style the current/active link */
-.item2 a.active {
+.navbar a.active {
   background-color: #04AA6D;
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
-  .item2 a {
+  .navbar a {
     float: none;
     display: block;
-    width: 100%;
+    width: 80%;
     text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 }
