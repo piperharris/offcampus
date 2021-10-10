@@ -15,11 +15,11 @@ min-height: 30vh ;
 
 background-size: cover;
 }
-
+}
 /* navigation bar */
 .navbar {
   width: 100%;
-  background-color: #555;
+  background-color: rgb(152, 201, 163);
   overflow: auto;
   grid-area: nav;
 }
@@ -30,12 +30,12 @@ background-size: cover;
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 25%; /* Four links of equal widths */
+  width: 15%; /* Four links of equal widths */
   text-align: center;
 }
 
 .navbar a:hover {
-  background-color: #000;
+  background-color: #80B77B;
 }
 
 .navbar a.active {
@@ -49,6 +49,7 @@ background-size: cover;
     width: 100%;
     text-align: left;
   }
+}
 }
 
 .item3 { grid-area: main;
