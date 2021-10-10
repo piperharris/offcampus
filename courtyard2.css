@@ -17,10 +17,38 @@ background-size: cover;
 }
 
 /* navigation bar */
-.item2 {
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
   grid-area: nav;
-  min-height: 10vh ;
-  margin-bottom: 5px;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .item3 { grid-area: main;
@@ -140,10 +168,10 @@ width: 100%;
 color: white;
 
 }
-.item2 a{
+/*.item2 a{
   height: 4vh;
   margin: 0% 2%;
-
+*/
 }
 .grid-container {
   display: grid;
