@@ -16,36 +16,12 @@ min-height: 30vh ;
 background-size: cover;
 }
 
-.navbar {
+/* navigation bar */
+.item2 {
   grid-area: nav;
-  width: 800%;
-  background-color: #555;
-  overflow: auto;
+  min-height: 10vh ;
+  margin-bottom: 5px;
 }
-
-/* Navigation links */
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
-}
-
-/* Add a background color on mouse-over */
-.navbar a:hover {
-  background-color: #000;
-}
-
-/* Style the current/active link */
-.navbar a.active {
-  background-color: #04AA6D;
-}
-
-}
-
 
 .item3 { grid-area: main;
 min-height: 50vh;
