@@ -2,7 +2,7 @@ body{
   
   box-sizing: border-box;
   /* background-image:url("doodle.jpeg") ; */
-background-image: url("../CafeImages/Cafe8.jpg");
+background-image: url("./CafeImages/Cafe8.jpg");
 background-size: cover;
 background-position: center;
   
@@ -14,7 +14,7 @@ margin:0;
 .item1 {
    grid-area: header;
 min-height: 30vh ;
-background-image: url("../CafeImages/Cafeteria.jpg");
+background-image: url("./CafeImages/Cafeteria.jpg");
 
 background-size: cover;
 
@@ -187,7 +187,7 @@ font-family: 'Source Sans Pro', sans-serif;
 height: 110px;
 width: 100px;
   display:inline-block;
-  background-image:url("../CafeImages/aboutus.png") ;
+  background-image:url("./CafeImages/aboutus.png") ;
 background-size:100px 100px;
   border: 2px solid black ;
    border-radius: 80%;
@@ -200,7 +200,7 @@ background-size:100px 100px;
   left:40px;
 min-width:200px;
 min-height: 130px;;
-background-image: url("../CafeImages/logo.png");
+background-image: url("./CafeImages/logo.png");
 border: solid rgb(238, 238, 9);
 background-size: cover;
 
