@@ -8,7 +8,7 @@
     var x= document.getElementById("show");
       if (x.style.display === "none"){
         x.style.display ="block";
-    } 
+    }
     else{
         x.style.display = "none"
     }
@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="Classroom.css">
 
 <!--Pomodoro Timer stylesheet-->
-<link href="./Pomodoro-timer/css/pomodoro-timer.css" rel="stylesheet">
+<link href="pomodoro-timer.css" rel="stylesheet">
 
 </head>
 
@@ -63,7 +63,7 @@
   </div>
 
   </div>
-  
+
 
 <div class="item2">
 <div id="nav">
@@ -77,9 +77,9 @@
 
   <!---- Main Section-->
   <div class="item3">
-    
+
     <div class="music-container">
-    
+
 
       <div class="music">
         <div class="box">
@@ -114,8 +114,8 @@
             <source src= "./Audio/MouseClick.mp3"   type="audio/mpeg">
             <source src= "./Audio/MouseClick.ogg"   type="audio/ogg">
           Your browser does not support the audio element.
-          </audio> 
-      </div>  
+          </audio>
+      </div>
 
     </div>
 
@@ -130,9 +130,9 @@
         <source src= "./Audio/OBJWrite_Pencil (ID 0221)_BSB.wav"   type="audio/wav">
         <source src= "./Audio/OBJWrite_Pencil (ID 0221)_BSB.wav"   type="audio/ogg">
         Your browser does not support the audio element.
-        </audio> 
+        </audio>
       </div>
-      
+
 
       <div class="music" style = "float:left">
           <div class="box">
@@ -145,7 +145,7 @@
           Your browser does not support the audio element.
           </audio>
         </div>
-                            
+
         <div class="music" style = "float: left">
           <div class="box">
             <p>Blackboard</p>
@@ -161,10 +161,10 @@
 
       <!--Putting some space between music and timer-->
       <div class = spacebtwndivs></div>
-      
+
     <!--POMODORO TIMER SECTION-->
      <!--COPY AND PASTE INTO BODY OF ENVIRONMENT PAGE (IN ITEM 3)-->
-     <script src="./Pomodoro-timer/js/pomodoro-timer.js"></script>
+     <script src="pomodoro-timer.js"></script>
 
      <div class="timercontainer">
       <div class="topbuttons">
@@ -193,7 +193,7 @@
           <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
         </button>
       </div>
-  
+
 </div>
 
 <!--COPY AND PASTE IN MAIN BODY OF HTML-->
@@ -201,7 +201,7 @@
         <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="js/pomodoro-timer.js"></script>
+        <script src="pomodoro-timer.js"></script>
         <script type="text/javascript">
 
         var _gaq = _gaq || [];
@@ -228,33 +228,33 @@
    </div>
 
 
-   
-   <div class="item5"> 
+
+   <div class="item5">
     <div class = spacebtwndivs></div>
     <main class="todo-container">
 
       <header>
        <h3>TO-DO LIST</h3>
-     
+
       </header>
-    
+
       <section">
-       <p style = "font-family: 'Gill Sans Mt'; font-size: 16px; color:#d88967;">Enter your task here:</p> 
+       <p style = "font-family: 'Gill Sans Mt'; font-size: 16px; color:#d88967;">Enter your task here:</p>
        <input type="text">
        <button class="button-todo btn-big js-btn-add">Add task</button>
        <button class="button-todo btn-small js-btn-clear">Clear</button>
        <button class="button-todo btn-small  js-btn-save">Save</button>
       </section>
-    
+
       <section class="list-container">
-      
+
       </section>
       <script type="text/javascript" src="Classroom.js"></script>
     </main>
-  
-  
-   
-  
+
+
+
+
     </div>
      </div>
 
