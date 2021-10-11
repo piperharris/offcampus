@@ -107,7 +107,7 @@ body{
 
   /* navigation links */
   .item2 a{
-    height: 4vh;
+     padding: 10px 2% 10px 2%;
     margin: 0% 2%;
   }
 
@@ -150,14 +150,14 @@ body{
     }
 /* navigation bar link decoration */
     .item2 a{
-    padding:1px 2% 1px 2%;
+    
     float:left;
     display:block;
     text-align:center;
   min-width: 12vh;
   color: black;
   font-family: Gill Sans MT;
-  min-height: 5vh; 
+/*   min-height: 5vh;  */
   font-size: 25px;
     }
 
