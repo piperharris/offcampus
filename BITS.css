@@ -2,7 +2,7 @@ body{
 
   box-sizing: border-box;
   /* background-image:url("doodle.jpeg") ; */
-background-image: url("../CafeImages/Cafe8.jpg");
+background-image: url("CafeImages/Cafe8.jpg");
 background-size: cover;
 background-position: center;
 
@@ -14,7 +14,7 @@ margin:0;
 .item1 {
    grid-area: header;
 min-height: 30vh ;
-background-image: url("../CafeImages/Cafeteria.jpg");
+background-image: url("CafeImages/Cafeteria.jpg");
 
 background-size: cover;
 }
