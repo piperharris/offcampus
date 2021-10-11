@@ -18,7 +18,7 @@ body{
 /* navigation bar */
 .navbar {
   width: 100%;
-  background-color: rgb(152, 201, 163);
+  background-color: white, 00;
   overflow: auto;
   grid-area: nav;
   height: 55px;
@@ -30,12 +30,12 @@ body{
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 15%; /* Four links of equal widths */
+  width: 16%; /* Four links of equal widths */
   text-align: center;
 }
 
 .navbar a:hover {
-  background-color: #80B77B;
+  background-color: grey;
 }
 
 .navbar a.active {
