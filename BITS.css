@@ -430,35 +430,3 @@ input {
 
 } */
 /*Pomodoro Timer*/
-
-.timercontainer p{
-float: none;
-padding-left: 25%;
-}
-/*Pomodoro Timer*/
-.timercontainer {
-  background-color: #000000cc;
-  border-radius: 25px;
-  margin-left: 30%;
-  margin-right: 25%;
-  margin-top: 2%;
-  border: 1.5px black solid;
-  margin-bottom: 25px;
-  width: 613px;
-  height: 93px;;
-}
-
-#timer {
-  color: aliceblue;
-}
-
-.btn_default {
-  color: black;
-}
-button {
-  height: 2rem;
-  border-radius: 2px;
-  background-color: #cd6c40e0;
-  margin-right: 1rem;
-  color: aliceblue;
-}
