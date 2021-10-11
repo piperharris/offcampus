@@ -19,7 +19,7 @@ background-size: cover;
 /* navigation bar */
 .navbar {
   width: 100%;
-  background-color: rgb(152, 201, 163);
+  background-color: #DDE7C7;
   overflow: auto;
   grid-area: nav;
   height: 55px;
@@ -31,7 +31,7 @@ background-size: cover;
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 15%; /* Four links of equal widths */
+  width:18%; /* Four links of equal widths */
   text-align: center;
 }
 
