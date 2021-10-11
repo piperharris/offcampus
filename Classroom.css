@@ -15,11 +15,47 @@ body{
 
   /* navigation bar */
   .item2 { grid-area: nav;
-    min-height: 4vh ;
+    
     margin-bottom: 2%;
     font-family: Gill Sans MT;
     
     }
+    /* .navbar {
+      width: 100%;
+      grid-area: nav;
+     
+      overflow: auto;
+      grid-area: nav;
+      height: 55px;
+    }
+    
+    .navbar a {
+      float: left;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      width:18%; /* Four links of equal widths */
+      /* text-align: center;
+    } */
+    
+    .navbar a:hover {
+      background-color: #E2C28D;
+    }
+    
+    .navbar a.active {
+      background-color: #04AA6D;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    } */
+    
 
   /* main content area: */
   .item3 { 
@@ -71,7 +107,7 @@ body{
 
   /* navigation links */
   .item2 a{
-    height: 4vh;
+    /* height: 4vh; */
     margin: 0% 2%;
   }
 
@@ -106,23 +142,27 @@ body{
     #nav{
       background-color: #cd6c40e0; 
       overflow:hidden;  
-      min-height: 5vh;
+      
       margin: 0 15% ;
-      padding: 5px;
+      
       border-radius: 10px;
-      border:solid black
+      border:solid black;
+      margin: 0 10% ;
+     padding-left: 13%;
+      
     }
 /* navigation bar link decoration */
     .item2 a{
-    padding:1px 2% 1px 2%;
+    padding: 10px 2% 10px 2%;
     float:left;
     display:block;
     text-align:center;
   min-width: 12vh;
   color: black;
   font-family: Gill Sans MT;
-  min-height: 5vh; 
+  /* min-height: 5vh;  */
   font-size: 25px;
+ 
     }
 
     /* hover decor */
@@ -404,4 +444,5 @@ h1{
   
   margin: 0;
 }
+
 

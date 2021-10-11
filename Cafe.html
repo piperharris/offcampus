@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="BITS.css">
 <!--Pomodoro Timer stylesheet-->
-<!-- <link href="pomodoro-timer.css" rel="stylesheet"> -->
+
+  <link href="./Pomodoro-timer/css/pomodoro-timer.css" rel="stylesheet">
 
 <script>
     function myFunction() {
@@ -19,7 +20,11 @@
     }
 }
 </script>
-
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+  
 <title>Cafeteria | Off-Campus</title>
 
 </head>
@@ -148,43 +153,46 @@
    </div>
        <!--Copy paste this section for the to-do list on other pages-->
 <div class="item5">
-  <main class="container">
+   <div class = spacebtwndivs></div>
+  <main class="todo-container">
+
     <header>
-     <h3>TODO-LIST</h3>
-     <link rel="stylesheet" href="To-do.css">
-
+     <h3>TO-DO LIST</h3>
+   
     </header>
-
-    <section>
-     <p>Enter your task here:</p>
+  
+    <section">
+     <p style = "font-size: 16px;color:#243f31;">Enter your task here:</p> 
      <input type="text">
-     <button class="btn btn-big js-btn-add">Add task</button>
-     <button class="btn btn-small js-btn-clear">Clear list</button>
-     <button class="btn btn-small  js-btn-save">Save list</button>
+     <button class="button-todo btn-big js-btn-add">Add task</button>
+     <button class="button-todo btn-small js-btn-clear">Clear</button>
+     <button class="button-todo btn-small  js-btn-save">Save</button>
     </section>
-
+  
     <section class="list-container">
-
+    
     </section>
     <script type="text/javascript" src="script.js"></script>
-
   </main>
 
 
-
+ 
 
   </div>
    </div>
-   <link rel="stylesheet" href="BITS.css">
-  <link href="pomodoro-timer.css" rel="stylesheet">
+ 
+
+  </div>
+   </div>
+
+<!--    <link rel="stylesheet" href="BITS.css"> -->
+  <link href="./Pomodoro-timer/css/pomodoro-timer.css" rel="stylesheet">
   <div class="item6">
     <!--Putting some space between music and timer-->
     <div class = spacebtwndivs></div>
 
   <!--POMODORO TIMER SECTION-->
    <!--COPY AND PASTE INTO BODY OF ENVIRONMENT PAGE (IN ITEM 3)-->
-   <script src="pomodoro-timer.js"></script>
-
    <div class="timercontainer">
     <div class="topbuttons">
         <span>
@@ -216,11 +224,7 @@
 </div>
 
 <!--COPY AND PASTE IN MAIN BODY OF HTML-->
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <script src="pomodoro-timer.js"></script>
+      <script src="./Pomodoro-timer/js/pomodoro-timer.js"></script>
       <script type="text/javascript">
 
       var _gaq = _gaq || [];

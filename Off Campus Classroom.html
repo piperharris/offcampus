@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Off Campus Classroom</title>
+
+  <script>
+    function myFunction() {
+    var x= document.getElementById("show");
+      if (x.style.display === "none"){
+        x.style.display ="block";
+    }
+    else{
+        x.style.display = "none"
+    }
+}
+</script>
+
+<!--ATTENTION: Place these two stylesheet links first before all other stylesheets in header (POMODORO TIMER) to load bootstrap and jquery first-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+<!--Classroom page stylesheet-->
+<link rel="stylesheet" href="Classroom.css">
+
+<!--Pomodoro Timer stylesheet-->
+<link href="./Pomodoro-timer/css/pomodoro-timer.css" rel="stylesheet">
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+<h1 style="text-align:center;color:rgb(128, 115, 0); font-size:155px;">  </h1>
+
+<div class="grid-container">
+  <div class="item1">
+    <div id=head>
+  <h1 id="name"> Off-Campus Classroom </h1>
+      <div id="logo"></div>
+    </div>
+    <button id="about" onclick="myFunction()">  </button>
+    <div id="show"> <h2>About us!</h1>&nbsp;
+      <h2>Welcome to the Off-Campus experience</h2>
+  <p>We all love to experience the aura that our campus life offers us. The blend of well-designed lecture
+    theatres, the courtyard’s rejuvenating sunlight, the library’s quiet space, and the cozy cafeterias all make
+    our campus experience priceless. Engaging ourselves in the learning-focused ambience of lecture rooms,
+    studying in the uninterrupted atmosphere of library rooms, sharing the experience of discussing academic
+    lessons and world affairs over a cup of coffee in the cafeteria with the peers, all these experiences create a
+    lifetime impression on us and we hold on to these memories forever.</p>&nbsp;
+
+  <p>In this pandemic context, staying healthy and safe is a stroke of luck. The situation has bound us to
+    continue our normal activities while staying in the safe atmosphere of our home. However, it is undeniable
+    that we are missing out on priceless experiences. Hence it was to simulate these experiences that we gained
+    the motivation for building this project. If we can assist you to feel the aura of campus life while sitting
+    at home, just with a device and browsing a website on the internet, it will be fairly remunerating. The
+    background noises on our website are based on the different uni-style rooms and their relevant background
+    images, in addition to features like a to-do list which gives you the option to list down all the activities
+    you want to complete. Moreover, playlists will be used to put you in the right mood for your work/study
+    /relaxation, and all these features will aim to boost up your spirit amidst the difficult times we all are
+    going through.</p>&nbsp;
+  </div>
+
+  </div>
+
+
+ <div class="item2">
+  <div class="navbar">
+<div id="nav">
+  <a href="index.html">Home</a>
+  <a href="Cafe.html">Cafeteria</a>
+  <a href="courtyard.html">Courtyard</a>
+  <a href="Off-Campus Classroom.html">Classroom</a>
+  <a href="chatroom.html">Chatroom</a>
+  </div>
+  </div>
+  </div>
+  
+
+  <!---- Main Section-->
+  <div class="item3">
+
+    <div class="music-container">
+
+
+      <div class="music">
+        <div class="box">
+          <p>Students</p>
+          <img src="images/students talking.jpg" class = audioimage alt="">
+        </div>
+        <audio class = player controls loop>
+          <source src= "./Audio/Students Talking.mp3"   type="audio/mpeg">
+          <source src= "./Audio/Students Talking.mp3"   type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="music">
+        <div class="box">
+          <p>Rain</p>
+          <img src="images/rain.jpg" class = audioimage alt="">
+        </div>
+        <audio class = player controls loop>
+        <source src= "./Audio/Rain - zapsplat.mp3"   type="audio/mpeg">
+        <source src= "./Audio/Rain - zapsplat.mp3"   type="audio/ogg">
+      Your browser does not support the audio element.
+      </audio>
+      </div>
+
+      <div class="music">
+        <div class="box">
+          <p>Mouse</p>
+          <img src="images/computer mouse.jpg" class = audioimage alt="">
+        </div>
+          <audio class = player controls loop>
+            <source src= "./Audio/MouseClick.mp3"   type="audio/mpeg">
+            <source src= "./Audio/MouseClick.ogg"   type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+      </div>
+
+    </div>
+
+
+    <div class="music-container">
+      <div class="music" style = "float: left">
+        <div class="box">
+          <p>Pencil</p>
+          <img src="images/pencil writing.jpg" class = audioimage alt="">
+        </div>
+        <audio class = player controls loop>
+        <source src= "./Audio/OBJWrite_Pencil (ID 0221)_BSB.wav"   type="audio/wav">
+        <source src= "./Audio/OBJWrite_Pencil (ID 0221)_BSB.wav"   type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+
+
+      <div class="music" style = "float:left">
+          <div class="box">
+            <p>Marker</p>
+            <img src="images/marke.jpg" class= audioimage alt="">
+          </div>
+          <audio class = player controls loop>
+            <source src= "./Audio/Writing-slow-with-marker.mp3"   type="audio/mpeg">
+            <source src= "./Audio/Writing-slow-with-marker.mp3"   type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="music" style = "float: left">
+          <div class="box">
+            <p>Blackboard</p>
+            <img src="images/chalk.jpg" class= audioimage alt="">
+          </div>
+              <audio class = player controls loop>
+              <source src= "./Audio/writing on blackboard.wav"   type="audio/wav">
+              <source src= "./Audio/writing on blackboard.wav"   type="audio/ogg">
+            Your browser does not support the audio element.
+            </audio>
+          </div>
+      </div>
+
+      <!--Putting some space between music and timer-->
+      <div class = spacebtwndivs></div>
+
+    <!--POMODORO TIMER SECTION-->
+     <!--COPY AND PASTE INTO BODY OF ENVIRONMENT PAGE (IN ITEM 3)-->
+    
+     <div class="timercontainer">
+      <div class="topbuttons">
+          <span>
+            <button id="pomodoroButton" class="btn btn-default" type="submit" onclick="onPomodoroTimer()" >Pomodoro</button>
+            <button id="shortButton" class="btn btn-default" type="submit" onclick="onShortTimer()">Short Break</button>
+            <button id="longButton" class="btn btn-default" type="submit" onclick="onLongTimer()">Long Break</button>
+          </span>
+      </div>
+      <div class="timer-time timer-container">
+        <div class="timer-time-set timer-box" id="currentTime">
+          <span id="hoursValue">00</span><span>:</span><span id="minutesValue">00</span><span>:</span><span id="secondsValue">00</span>
+        </div>
+        <div class="timer-time-set timer-box" id="nextTime">
+          <span id="hoursNext">00</span><span>:</span><span id="minutesNext">00</span><span>:</span><span id="secondsNext">00</span>
+        </div>
+      </div>
+      <div class = "lowerbuttons">
+        <button id="restartButton" class="btn btn-warning btn-lg" type="submit" onclick="onResetTimer()">
+          <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Reset
+        </button>
+        <button id="startButton" class="btn btn-primary btn-lg" type="submit" onclick="onStartTimer()">
+          <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start
+        </button>
+        <button id="stopButton" class="btn btn-danger btn-lg" type="submit" onclick="onStopTimer()">
+          <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
+        </button>
+      </div>
+
+</div>
+
+<!--COPY AND PASTE IN MAIN BODY OF HTML-->
+        <script src="Pomodoro-timer/js/pomodoro-timer.js"></script>
+        <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        </script>
+<!--END POMODORO TIMER SECTION-->
+
+
+</div>
+
+
+
+<div class="item4">
+  <div class = spacebtwndivs></div>
+<div><iframe src="https://open.spotify.com/embed/playlist/3LFIBdP7eZXJKqf3guepZ1" width="300" style = "border: 2px solid black; border-radius: 10px;" height="450" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+   </div>
+
+
+
+   <div class="item5">
+    <div class = spacebtwndivs></div>
+    <main class="todo-container">
+
+      <header>
+       <h3>TO-DO LIST</h3>
+
+      </header>
+
+      <section">
+       <p style = "font-family: 'Gill Sans Mt'; font-size: 16px; color:#d88967;">Enter your task here:</p>
+       <input type="text">
+       <button class="button-todo btn-big js-btn-add">Add task</button>
+       <button class="button-todo btn-small js-btn-clear">Clear</button>
+       <button class="button-todo btn-small  js-btn-save">Save</button>
+      </section>
+
+      <section class="list-container">
+
+      </section>
+      <script type="text/javascript" src="Classroom.js"></script>
+    </main>
+
+
+
+
+    </div>
+     </div>
+
+
+<div class="item6"></div>
+</div>
+
+</body>
+</html>
