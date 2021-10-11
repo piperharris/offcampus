@@ -2,8 +2,13 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
 <head>
 <link rel="stylesheet" href="courtyard2.css">
+<!--Pomodoro Timer stylesheet-->
+<link href="pomodoro-timer.css" rel="stylesheet">
 
 <script>
     function myFunction() {
@@ -189,23 +194,66 @@
    </div>
 
    <div class="item6">
-   <!--Pomodoro Timer Section-->
-   <div class = "timercontainer">
-<script type="text/javascript" src="timer.js"></script>
-     <p>
-       <button id = "btn_pomodoro" class = "btn_default">Pomodoro</button>
-       <button id = "btn_shortbreak" class = "btn_default">Short Break</button>
-       <button id = "btn_longbreak" class = "btn_default">Long Break</button>
-     </p>
-     <p>
-       <div><span style = "font-size: 50px; text-shadow: 3px 3px white; text-align: left"id = "timer"></div>
-       <button id = "btn_start" class = "btn_default">Start</button>
-       <button id = "btn_pause" class = "btn_default">Pause</button>
-       <button id = "btn_reset" class = "btn_default">Reset</button>
-     </p>
-   </div>
 
- </div>
+           <!--Putting some space between music and timer-->
+           <div class = spacebtwndivs></div>
+
+         <!--POMODORO TIMER SECTION-->
+          <!--COPY AND PASTE INTO BODY OF ENVIRONMENT PAGE (IN ITEM 3)-->
+          <script src="pomodoro-timer.js"></script>
+
+          <div class="timercontainer">
+           <div class="topbuttons">
+               <span>
+                 <button id="pomodoroButton" class="btn btn-default" type="submit" onclick="onPomodoroTimer()" >Pomodoro</button>
+                 <button id="shortButton" class="btn btn-default" type="submit" onclick="onShortTimer()">Short Break</button>
+                 <button id="longButton" class="btn btn-default" type="submit" onclick="onLongTimer()">Long Break</button>
+               </span>
+           </div>
+           <div class="timer-time timer-container">
+             <div class="timer-time-set timer-box" id="currentTime">
+               <span id="hoursValue">00</span><span>:</span><span id="minutesValue">00</span><span>:</span><span id="secondsValue">00</span>
+             </div>
+             <div class="timer-time-set timer-box" id="nextTime">
+               <span id="hoursNext">00</span><span>:</span><span id="minutesNext">00</span><span>:</span><span id="secondsNext">00</span>
+             </div>
+           </div>
+           <div class = "lowerbuttons">
+             <button id="restartButton" class="btn btn-warning btn-lg" type="submit" onclick="onResetTimer()">
+               <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Reset
+             </button>
+             <button id="startButton" class="btn btn-primary btn-lg" type="submit" onclick="onStartTimer()">
+               <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start
+             </button>
+             <button id="stopButton" class="btn btn-danger btn-lg" type="submit" onclick="onStopTimer()">
+               <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
+             </button>
+           </div>
+
+     </div>
+
+     <!--COPY AND PASTE IN MAIN BODY OF HTML-->
+             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+             <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+             <!-- Include all compiled plugins (below), or include individual files as needed -->
+             <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+             <script src="pomodoro-timer.js"></script>
+             <script type="text/javascript">
+
+             var _gaq = _gaq || [];
+             _gaq.push(['_setAccount', 'UA-36251023-1']);
+             _gaq.push(['_setDomainName', 'jqueryscript.net']);
+             _gaq.push(['_trackPageview']);
+
+             (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+             </script>
+     <!--END POMODORO TIMER SECTION-->
+
+
 
 
 </body>
