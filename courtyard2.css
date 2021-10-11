@@ -364,35 +364,3 @@ audio::-webkit-media-controls-panel {
   background-color: white;
   color: #b87c6a;
 }
-
-
-/*Pomodoro Timer*/
-.timercontainer {
-  background-color: #bfd8bd;
-  border-radius: 25px;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 2%;
-  border: 1.5px black solid;
-  margin-bottom: 25px;
-  max-width: auto;
-  align-content: center;
-
-  max-height: auto;
-  padding: 2% 0 2% 15%;
-
-}
-
-#timer {
-  color: green;
-  margin-left: 25%;
-
-}
-
-.btn_default {
-  color: black;
-  padding-bottom: 2%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-
-}
