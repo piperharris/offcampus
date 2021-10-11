@@ -132,7 +132,7 @@ input[type=checkbox] {
 }
 
 .list-container {
-  background: #FFFFFF;
+  background: #dde7c7;
   display: flex;
   flex-direction: column;
 }
