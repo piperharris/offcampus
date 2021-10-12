@@ -98,7 +98,7 @@ header {
 }
 
 section {
-  font-size: 1.25rem;
+  font-size: 20px;
   padding: 0 0.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +113,7 @@ input[type=text] {
 
 input[type=checkbox] {
   margin-right: 0.5rem;
+  width:50px;
 }
 
 .item5 button {
@@ -148,8 +149,7 @@ input[type=checkbox] {
 }
 
 .delete-button {
-  height: 1.5rem;
-  width: 2rem;
+  width: 50px;
   margin-left:auto;
   background:black;
   color: white;
