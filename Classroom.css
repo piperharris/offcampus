@@ -14,8 +14,8 @@ body{
   }
 
   /* navigation bar */
-  .item2 { grid-area: nav;
-    
+  .item2 { 
+      grid-area: nav;
     margin-bottom: 2%;
     font-family: Gill Sans MT;
     
@@ -30,19 +30,25 @@ body{
       background-color: #04AA6D;
     }
     
-    @media screen and (max-width: 500px) {
-      .navbar a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
+@media screen and(max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
     } 
     
 
-  /* main content area: */
+ /* .player {
+    width: 50%;
+    height: 20% ;
+  }*/
+
+/* main content area: */
+
   .item3 { 
-    grid-area: main;
+   grid-area: main;
   min-height: 50vh; 
   border-radius: 10px;
   border: 2px solid black;
@@ -50,16 +56,6 @@ body{
   font-family: Gill Sans MT;
   background-color: #33333394;
   }
-
-  /*
-  #backgroundnoise{;
-
-  }*/
-
- /* .player {
-    width: 50%;
-    height: 20% ;
-  }*/
 
 
   /* Spotify API section */
@@ -114,15 +110,13 @@ body{
     #nav{
       background-color: #cd6c40e0; 
       overflow:hidden;  
-      
       margin: 0 15% ;
-      
       border-radius: 10px;
       border:solid black;
       margin: 0 10% ;
      padding-left: 13%;
-      
     }
+
 /* navigation bar link decoration */
     .item2 a{
     padding: 10px 2% 10px 2%;
