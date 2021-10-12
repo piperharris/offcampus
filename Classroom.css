@@ -62,7 +62,7 @@ body{
     grid-area: main;
   min-height: 50vh; 
   border-radius: 10px;
-  border: 2px solid #333;
+  border: 2px solid black;
   color:#0e0000;
   font-family: Gill Sans MT;
   background-color: #33333394;
