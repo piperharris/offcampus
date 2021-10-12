@@ -106,7 +106,7 @@ section {
 }
 
 input[type=text] {
-  height: 2rem;
+  height: 40px;
   width:100%;
   margin-bottom: 0.5rem;
 }
@@ -116,15 +116,17 @@ input[type=checkbox] {
 }
 
 .item5 button {
-  height: 2rem;
+  height: 50px;
   border-radius: 2px;
   background:  #5C946E;
   margin-right: 15px;
   color: white;
+  font-size: 20px;
 }
 
 .btn-big {
   width:30%;
+  height:50px;
 }
 
 .btn-small {
