@@ -20,24 +20,7 @@ body{
     font-family: Gill Sans MT;
     
     }
-    /* .navbar {
-      width: 100%;
-      grid-area: nav;
-     
-      overflow: auto;
-      grid-area: nav;
-      height: 55px;
-    }
     
-    .navbar a {
-      float: left;
-      padding: 12px;
-      color: white;
-      text-decoration: none;
-      font-size: 17px;
-      width:18%; /* Four links of equal widths */
-      /* text-align: center;
-    } */
     
     .navbar a:hover {
       background-color: #E2C28D;
@@ -92,18 +75,7 @@ body{
     min-width: 20vh  ;
   }
   
-  /*footer section 
-  .item6 { 
-      grid-area: footer;
-  min-height: 10vh;
-  background-color: #cd6c40e0;
-  width: auto;
-  border-radius: 25px;
-  border: solid #333;
-  margin: 5px;
-
-  }
-  */ 
+ 
 
   /* navigation links */
   .item2 a{
